@@ -211,6 +211,7 @@ ANCHORFILE="$PIDDIR/$APP_NAME.anchor"
 PIDFILE="$PIDDIR/$APP_NAME.pid"
 LOCKDIR="$REALDIR"
 LOCKFILE="$LOCKDIR/$APP_NAME"
+TMPDIR="$REALDIR/tmp"
 pid=""
 
 # Resolve the architecture
@@ -346,6 +347,12 @@ then
 else
     LOCKPROP=
 fi
+
+if [ ! -d "$TMPDIR" ]
+then
+    mkdir -p "$TMPDIR"
+fi
+
 
 checkUser() {
     # Check the configured user.  If necessary rerun this script as the desired user.
