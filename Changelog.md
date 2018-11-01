@@ -1,5 +1,9 @@
 ### Changelog
 
+* 2.2.1
+
+* Update fred to 1481
+
 * 2.2.0
 
     * Update fred to 1480
