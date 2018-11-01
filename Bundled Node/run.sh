@@ -134,7 +134,7 @@ then
 	if ! test -e "$JAVA_HOME/bin/java"
 	then
 		# otherwise hope for the best
-		JAVA_HOME="`/usr/libexec/java_home -v 1.6+`"
+		JAVA_HOME="`/usr/libexec/java_home -v 1.7+`"
 	fi
 fi
 
